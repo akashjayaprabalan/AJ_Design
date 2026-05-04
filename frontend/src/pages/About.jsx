@@ -10,39 +10,29 @@ const About = () => {
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-                Hi, I'm{' '}
-                <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-                  {personalInfo.name}
-                </span>
-              </h1>
-              <p className="text-2xl text-gray-700 font-medium">{personalInfo.title}</p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                {personalInfo.description}
-              </p>
-              <div className="flex gap-4 pt-4">
-                <Link to="/contact">
-                  <Button size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
-                    Let's Work Together
-                  </Button>
-                </Link>
-                <Link to="/portfolio">
-                  <Button size="lg" variant="outline" className="border-2 border-gray-300 hover:border-blue-500 hover:text-blue-600 transition-all duration-300">
-                    View My Work
-                  </Button>
-                </Link>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full opacity-20 blur-3xl"></div>
-              <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzQ5NzY3MDd8MA&ixlib=rb-4.1.0&q=85"
-                alt={personalInfo.name}
-                className="relative rounded-2xl shadow-2xl w-full hover:shadow-3xl transition-shadow duration-300"
-              />
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="space-y-6">
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+              Hi, I'm{' '}
+              <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+                {personalInfo.name}
+              </span>
+            </h1>
+            <p className="text-2xl text-gray-700 font-medium">{personalInfo.title}</p>
+            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+              {personalInfo.description}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <Link to="/contact">
+                <Button size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                  Let's Work Together
+                </Button>
+              </Link>
+              <Link to="/portfolio">
+                <Button size="lg" variant="outline" className="border-2 border-gray-300 hover:border-blue-500 hover:text-blue-600 transition-all duration-300">
+                  View My Work
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
