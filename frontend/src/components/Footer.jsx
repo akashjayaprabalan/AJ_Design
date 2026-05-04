@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="col-span-1">
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent mb-4">
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">
               AJ Design
             </h3>
             <p className="text-gray-300 text-sm leading-relaxed">
@@ -22,13 +22,13 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-lg mb-4 text-orange-400">Quick Links</h4>
+            <h4 className="font-semibold text-lg mb-4 text-blue-400">Quick Links</h4>
             <ul className="space-y-2">
               {['Home', 'Services', 'Portfolio', 'About', 'Contact'].map((item) => (
                 <li key={item}>
                   <Link
                     to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
-                    className="text-gray-300 hover:text-orange-400 transition-colors text-sm"
+                    className="text-gray-300 hover:text-blue-400 transition-colors text-sm"
                   >
                     {item}
                   </Link>
@@ -39,36 +39,36 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold text-lg mb-4 text-orange-400">Services</h4>
+            <h4 className="font-semibold text-lg mb-4 text-blue-400">Services</h4>
             <ul className="space-y-2 text-sm">
-              <li className="text-gray-300 hover:text-orange-400 transition-colors cursor-pointer">Website Design</li>
-              <li className="text-gray-300 hover:text-orange-400 transition-colors cursor-pointer">Website Development</li>
-              <li className="text-gray-300 hover:text-orange-400 transition-colors cursor-pointer">Landing Pages</li>
-              <li className="text-gray-300 hover:text-orange-400 transition-colors cursor-pointer">SEO Optimization</li>
+              <li className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">Website Design</li>
+              <li className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">Website Development</li>
+              <li className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">Landing Pages</li>
+              <li className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">SEO Optimization</li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-semibold text-lg mb-4 text-orange-400">Get in Touch</h4>
+            <h4 className="font-semibold text-lg mb-4 text-blue-400">Get in Touch</h4>
             <ul className="space-y-3">
-              <li className="flex items-center gap-2 text-sm text-gray-300 hover:text-orange-400 transition-colors">
+              <li className="flex items-center gap-2 text-sm text-gray-300 hover:text-blue-400 transition-colors">
                 <Mail size={16} />
                 <a href={`mailto:${personalInfo.email}`}>{personalInfo.email}</a>
               </li>
-              <li className="flex items-center gap-2 text-sm text-gray-300 hover:text-orange-400 transition-colors">
+              <li className="flex items-center gap-2 text-sm text-gray-300 hover:text-blue-400 transition-colors">
                 <Phone size={16} />
                 <a href={`tel:${personalInfo.phone}`}>{personalInfo.phone}</a>
               </li>
             </ul>
             <div className="flex gap-4 mt-4">
-              <a href="#" className="p-2 rounded-full bg-white/10 hover:bg-orange-500 transition-all duration-300 hover:scale-110">
+              <a href="#" className="p-2 rounded-full bg-white/10 hover:bg-blue-500 transition-all duration-300 hover:scale-110">
                 <Linkedin size={18} />
               </a>
-              <a href="#" className="p-2 rounded-full bg-white/10 hover:bg-orange-500 transition-all duration-300 hover:scale-110">
+              <a href="#" className="p-2 rounded-full bg-white/10 hover:bg-blue-500 transition-all duration-300 hover:scale-110">
                 <Github size={18} />
               </a>
-              <a href="#" className="p-2 rounded-full bg-white/10 hover:bg-orange-500 transition-all duration-300 hover:scale-110">
+              <a href="#" className="p-2 rounded-full bg-white/10 hover:bg-blue-500 transition-all duration-300 hover:scale-110">
                 <Twitter size={18} />
               </a>
             </div>
@@ -79,8 +79,8 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <p>&copy; {currentYear} {personalInfo.name}. All rights reserved.</p>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-orange-400 transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-orange-400 transition-colors">Terms of Service</a>
+              <a href="#" className="hover:text-blue-400 transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-blue-400 transition-colors">Terms of Service</a>
             </div>
           </div>
         </div>

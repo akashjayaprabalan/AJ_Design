@@ -48,11 +48,11 @@ const Contact = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-orange-50 via-purple-50 to-blue-50">
+      <section className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Let's{' '}
-            <span className="bg-gradient-to-r from-orange-500 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
               Work Together
             </span>
           </h1>
@@ -71,7 +71,7 @@ const Contact = () => {
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
                   Get in{' '}
-                  <span className="bg-gradient-to-r from-orange-500 to-purple-500 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
                     Touch
                   </span>
                 </h2>
@@ -81,16 +81,16 @@ const Contact = () => {
               </div>
 
               <div className="space-y-6">
-                <Card className="border-2 hover:border-orange-500 transition-all duration-300 group">
+                <Card className="border-2 hover:border-blue-500 transition-all duration-300 group">
                   <CardContent className="p-6 flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-orange-500 to-pink-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                       <Mail className="text-white" size={24} />
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Email</h3>
                       <a 
                         href={`mailto:${personalInfo.email}`} 
-                        className="text-gray-600 hover:text-orange-500 transition-colors"
+                        className="text-gray-600 hover:text-blue-600 transition-colors"
                       >
                         {personalInfo.email}
                       </a>
@@ -98,16 +98,16 @@ const Contact = () => {
                   </CardContent>
                 </Card>
 
-                <Card className="border-2 hover:border-orange-500 transition-all duration-300 group">
+                <Card className="border-2 hover:border-blue-500 transition-all duration-300 group">
                   <CardContent className="p-6 flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-orange-500 to-pink-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                       <Phone className="text-white" size={24} />
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Phone</h3>
                       <a 
                         href={`tel:${personalInfo.phone}`} 
-                        className="text-gray-600 hover:text-orange-500 transition-colors"
+                        className="text-gray-600 hover:text-blue-600 transition-colors"
                       >
                         {personalInfo.phone}
                       </a>
@@ -115,9 +115,9 @@ const Contact = () => {
                   </CardContent>
                 </Card>
 
-                <Card className="border-2 hover:border-orange-500 transition-all duration-300 group">
+                <Card className="border-2 hover:border-blue-500 transition-all duration-300 group">
                   <CardContent className="p-6 flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-orange-500 to-pink-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                       <MapPin className="text-white" size={24} />
                     </div>
                     <div>
@@ -139,7 +139,7 @@ const Contact = () => {
                     'Clear timeline and project milestones'
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-2">
-                      <CheckCircle className="text-orange-500 flex-shrink-0" size={20} />
+                      <CheckCircle className="text-blue-500 flex-shrink-0" size={20} />
                       <span className="text-gray-700">{item}</span>
                     </li>
                   ))}
@@ -163,7 +163,7 @@ const Contact = () => {
                       onChange={handleChange}
                       placeholder="John Doe"
                       required
-                      className="mt-2 border-2 focus:border-orange-500 transition-colors"
+                      className="mt-2 border-2 focus:border-blue-500 transition-colors"
                     />
                   </div>
 
@@ -177,7 +177,7 @@ const Contact = () => {
                       onChange={handleChange}
                       placeholder="john@example.com"
                       required
-                      className="mt-2 border-2 focus:border-orange-500 transition-colors"
+                      className="mt-2 border-2 focus:border-blue-500 transition-colors"
                     />
                   </div>
 
@@ -190,7 +190,7 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="+1 (555) 123-4567"
-                      className="mt-2 border-2 focus:border-orange-500 transition-colors"
+                      className="mt-2 border-2 focus:border-blue-500 transition-colors"
                     />
                   </div>
 
@@ -204,14 +204,14 @@ const Contact = () => {
                       placeholder="Tell me about your project, goals, and timeline..."
                       required
                       rows={6}
-                      className="mt-2 border-2 focus:border-orange-500 transition-colors resize-none"
+                      className="mt-2 border-2 focus:border-blue-500 transition-colors resize-none"
                     />
                   </div>
 
                   <Button
                     type="submit"
                     disabled={isSubmitting || isSubmitted}
-                    className="w-full bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? (
                       'Sending...'
@@ -240,7 +240,7 @@ const Contact = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Frequently Asked{' '}
-              <span className="bg-gradient-to-r from-orange-500 to-purple-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
                 Questions
               </span>
             </h2>
@@ -265,7 +265,7 @@ const Contact = () => {
                 answer: 'Absolutely! I offer redesign services and can work with existing websites to improve design, performance, and functionality.'
               }
             ].map((faq, index) => (
-              <Card key={index} className="border-2 hover:border-orange-500 transition-all duration-300">
+              <Card key={index} className="border-2 hover:border-blue-500 transition-all duration-300">
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-2">{faq.question}</h3>
                   <p className="text-gray-600 leading-relaxed">{faq.answer}</p>

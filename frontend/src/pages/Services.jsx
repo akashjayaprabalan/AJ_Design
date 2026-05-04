@@ -17,11 +17,11 @@ const Services = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-orange-50 via-purple-50 to-blue-50">
+      <section className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Services That{' '}
-            <span className="bg-gradient-to-r from-orange-500 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
               Drive Results
             </span>
           </h1>
@@ -40,17 +40,17 @@ const Services = () => {
               return (
                 <Card 
                   key={service.id} 
-                  className="group hover:shadow-2xl transition-all duration-300 border-2 hover:border-orange-500 overflow-hidden"
+                  className="group hover:shadow-2xl transition-all duration-300 border-2 hover:border-blue-500 overflow-hidden"
                 >
                   <CardContent className="p-10">
                     <div className="flex items-start gap-6">
                       <div className="flex-shrink-0">
-                        <div className="w-16 h-16 rounded-2xl bg-gradient-to-r from-orange-500 to-pink-500 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <div className="w-16 h-16 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                           <IconComponent className="text-white" size={32} />
                         </div>
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-2xl font-bold mb-3 group-hover:text-orange-500 transition-colors">
+                        <h3 className="text-2xl font-bold mb-3 group-hover:text-blue-600 transition-colors">
                           {service.title}
                         </h3>
                         <p className="text-gray-600 leading-relaxed mb-6">
@@ -61,7 +61,7 @@ const Services = () => {
                           <div className="grid grid-cols-2 gap-2">
                             {service.benefits.map((benefit, idx) => (
                               <div key={idx} className="flex items-center gap-2">
-                                <CheckCircle className="text-orange-500 flex-shrink-0" size={16} />
+                                <CheckCircle className="text-blue-500 flex-shrink-0" size={16} />
                                 <span className="text-sm text-gray-700">{benefit}</span>
                               </div>
                             ))}
@@ -83,7 +83,7 @@ const Services = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               How I{' '}
-              <span className="bg-gradient-to-r from-orange-500 to-purple-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
                 Work
               </span>
             </h2>
@@ -100,7 +100,7 @@ const Services = () => {
               <div key={index} className="relative group">
                 <div className="text-center">
                   <div className="inline-block mb-4">
-                    <div className="text-6xl font-bold bg-gradient-to-r from-orange-500 to-purple-500 bg-clip-text text-transparent group-hover:scale-110 transition-transform">
+                    <div className="text-6xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform">
                       {item.step}
                     </div>
                   </div>
@@ -108,7 +108,7 @@ const Services = () => {
                   <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
                 </div>
                 {index < 3 && (
-                  <div className="hidden md:block absolute top-12 -right-4 w-8 h-0.5 bg-gradient-to-r from-orange-500 to-purple-500"></div>
+                  <div className="hidden md:block absolute top-12 -right-4 w-8 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600"></div>
                 )}
               </div>
             ))}
@@ -121,7 +121,7 @@ const Services = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Let's Build Something{' '}
-            <span className="bg-gradient-to-r from-orange-500 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
               Amazing
             </span>
           </h2>
@@ -129,7 +129,7 @@ const Services = () => {
             Ready to take your business to the next level? Get started with a free consultation.
           </p>
           <Link to="/contact">
-            <Button size="lg" className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white text-lg px-10 py-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <Button size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white text-lg px-10 py-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
               Get a Free Quote
             </Button>
           </Link>

@@ -15,11 +15,11 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-orange-50 via-purple-50 to-blue-50">
+      <section className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             My{' '}
-            <span className="bg-gradient-to-r from-orange-500 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
               Portfolio
             </span>
           </h1>
@@ -39,7 +39,7 @@ const Portfolio = () => {
                 onClick={() => setFilter(category)}
                 className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
                   filter === category
-                    ? 'bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-lg scale-105'
+                    ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg scale-105'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -57,7 +57,7 @@ const Portfolio = () => {
             {filteredProjects.map((project, index) => (
               <Card 
                 key={project.id} 
-                className="group overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-orange-500"
+                className="group overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-blue-500"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="relative overflow-hidden h-64">
@@ -69,12 +69,12 @@ const Portfolio = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <ExternalLink className="text-white" size={40} />
                   </div>
-                  <Badge className="absolute top-4 left-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white border-0">
+                  <Badge className="absolute top-4 left-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white border-0">
                     {project.category}
                   </Badge>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2 group-hover:text-orange-500 transition-colors">
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600 transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-gray-600 text-sm mb-4 leading-relaxed">
@@ -98,7 +98,7 @@ const Portfolio = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-500 via-purple-500 to-blue-500">
+      <section className="py-20 bg-gradient-to-r from-blue-500 via-purple-600 to-indigo-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 text-center text-white">
             {[
