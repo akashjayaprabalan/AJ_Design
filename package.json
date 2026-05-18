@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "cd frontend && corepack yarn start",
+    "build": "cd frontend && corepack yarn build",
+    "preview": "cd frontend && corepack yarn preview",
+    "deploy": "npx vercel --prod",
+    "deploy:netlify": "cd frontend && corepack yarn deploy:netlify"
+  },
+  "packageManager": "yarn@1.22.22"
+}
