@@ -58,7 +58,10 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "preview": "npx serve -s build -l 3000",
+    "deploy": "npx vercel --prod",
+    "deploy:netlify": "corepack yarn build && npx netlify-cli deploy --prod --dir=build"
   },
   "browserslist": {
     "production": [
