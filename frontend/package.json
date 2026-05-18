@@ -58,6 +58,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
+    "postbuild": "node scripts/prepare-static-routes.mjs",
     "test": "craco test",
     "preview": "npx serve -s build -l 3000",
     "deploy": "npx vercel --prod",
