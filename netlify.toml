@@ -1,0 +1,9 @@
+[build]
+  base = "frontend"
+  command = "corepack yarn build"
+  publish = "build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
